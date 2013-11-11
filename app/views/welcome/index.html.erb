@@ -1,0 +1,158 @@
+<div class="navbar-wrapper">
+  <div class="container">
+    <div class="navbar navbar-inverse navbar-static-top">
+      
+        <div class="navbar-header">
+	    <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </a>
+        <a class="navbar-brand" href="#">Conscious Maids</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Who We Are</a></li>
+            <li><a href="http://www.bootply.com" target="ext">Services & Prices </a></li>
+            <li><a href="#contact">Where we serve</a></li>
+            <li class="navbar-text">Call Now (310)697-2843</li>
+          </ul>
+           <div><a class='btn btn btn-danger pull-right' href='#' style="margin-top: 9px; margin-right: 40px;">Book Now</a></div> 
+
+        </div>
+
+    </div>
+  </div><!-- /container -->
+</div><!-- /navbar wrapper -->
+
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel">
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag ("maidspicblur4.jpg"), :style => "width: 100%" %>
+        <span id="caption"><div class="carousel-caption">
+          <h1>"Enjoy your time off. Let us worry about the mess!"</h1>
+            <p>200% Guarantee. Money back if not satisfied.</small></p>
+            <p>Serving entire Silicon Valley.</small></p>
+            <p>Top-notch Customer service</p>                        
+            <p>We bring all supplies.</small></p>
+            <p>On time service.</small></p>
+            <p>Cancel Anytime.</small></p>
+          </span>
+          
+      <div class="container">
+        <%= form_for @lead, html: {class: "form-horizontal", role: "form", style: "margin-left: 50px; padding-top: 50px"}  do |f| %>
+          
+          <% if @lead.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
+            </div>
+            <ul>
+              <% @lead.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+            </ul>
+          <% end %>  
+         
+
+          <div class="form-group">
+            <%= f.label :email, :class => "col-sm-2 control-label" %>
+            <div class="col-sm-5">
+              <%= f.text_field :email, :class => "form-control", :style => "width: 60%" %>
+            </div>  
+          </div>
+
+          <div class="form-group">
+          <%= f.label :name, :class => "col-sm-2 control-label" %>
+            <div class="col-sm-5">
+              <%= f.text_field :name, :class => "form-control", :style => "width: 60%", :id => "inputPassword3" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+              <%= f.label :phone, :class => "col-sm-2 control-label" %>
+            <div class="col-sm-5">
+              <%= f.text_field :phone, :class => "form-control", :style => "width: 60%" %>
+            </div>
+          </div>  
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-3">
+              <%= f.submit "Request Quote", :class => "btn btn-danger" %>
+            </div>  
+          </div>
+        <% end %>
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- /.carousel -->
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <%= image_tag ("maid3.jpg"), :class => "img-circle" %>
+      <h2>Professional Maid Services</h2>
+      <p>Conscious Maids conducts background checks and screens our maids and cleaning service providers.Our professional personnel have years of experience servicing all types of residences, plus the tools, skills and dedication necessary for excellent service. </p>
+    </div>
+    <div class="col-md-4 text-center">
+      <%= image_tag ("200r1.png") %>
+      <h2>OUR 200% MONEY BACK GUARANTEE</h2>
+      <p>If not satisfied we will take the time to re-clean within 24hrs. If for any reason you are still not satisfied with the service, or wouldn't recommend our services to a friend, we will refund you no questions asked!</p>
+    </div>
+    <div class="col-md-4 text-center">
+      <%= image_tag ("map4.png"), :class => "img-circle" %>
+      <h2>Silicon Valley Never Looked So Good!</h2>
+      <p>Happily serving the Silicon Valley area. From San Jose to Palo Alto we are ready to serve you. Available seven days a week from 8am to 6pm. Contact us to see if we service your area.</p>
+    </div>
+  </div><!-- /.row -->
+
+
+  <!-- START THE FEATURETTES -->
+
+  <hr class="featurette-divider">
+
+  <div class="featurette">
+      <iframe class="featurette-image img-circle pull-right" width="480" height="375" src="//www.youtube.com/embed/k3Mw8hZeurA?modestbranding=1&amp;controls=0&amp;showinfo=0&amp;rel=0" frameborder="1" allowfullscreen style="border-style: bold;" seamless></iframe>
+    <h2 class="featurette-heading">Check out this testimonial. <span class="text-muted">You will be just as satisfied.</span></h2>
+    <p class="lead">We have many satisfied clients that rely on us to keep their beautiful homes spotless. It is our mission to have offer the best service possible, in order to build long lasting relationships with our clients.</p>
+  </div>
+
+  <hr class="featurette-divider">
+
+<div class="featurette">
+    <%= image_tag ("clipboard.png"), :class => "featurette-image  pull-left"%>
+    <h2 class="featurette-heading">50 Point Clean Checklist. <span class="text-muted">Not fininished until you sign off.</span></h2>
+    <p class="lead"> Through time, we developed a 50 point cleaning checklist. The team leader double checks to make sure all cleaning tasks have been completed before handing the list to the client for the final review.</p>
+  </div>
+
+  <hr class="featurette-divider">
+
+   <div class="featurette">
+    <%= image_tag ("phone.png"), :class => "featurette-image  pull-right"%>
+
+    <h2 class="featurette-heading"> Supreme Customer Service. <span class="text-muted">No surprises, No Funny Business.</span></h2>
+    <p class="lead">We take our client's satisfaction very seriously. If the client wouldn't recommend us to their friend's we didn't do our job. Schedule an cleaning  today (310) 697-2843</p>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>This Bootstrap layout is compliments of Bootply. · <a href="http://www.bootply.com/62603">Edit on Bootply.com</a></p>
+  </footer>
+
+</div><!-- /.container -->
