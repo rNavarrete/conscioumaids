@@ -6981,6 +6981,7 @@ button.close {
   .carousel-caption p {
     font-size: 145%;
     padding-bottom: 5px;
+  }  
 }
 
 @media screen and (max-width: 800px) {
@@ -6994,8 +6995,8 @@ button.close {
     margin-left: -15px;
     font-size: 30%;
     overflow:auto;
+  }  
 
-  }
   .carousel-caption {
     right: 5%;
     left: 5%;
@@ -7003,7 +7004,6 @@ button.close {
     font-size: 100%;
     margin-bottom: 5px;
     margin-top: 5px;
-
   }
   .carousel-indicators {
     bottom: 20px;
