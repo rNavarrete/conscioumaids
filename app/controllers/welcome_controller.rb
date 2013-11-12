@@ -5,4 +5,6 @@ class WelcomeController < ApplicationController
   def prices
   	@lead = Lead.new  	
   end	
+  def confirmation
+  end	
 end

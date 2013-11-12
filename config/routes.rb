@@ -9,6 +9,9 @@ Maids::Application.routes.draw do
   root 'welcome#index'
 
   get 'prices' => 'welcome#prices'
+
+  get 'confirmation' => 'welcome#confirmation'
+
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
