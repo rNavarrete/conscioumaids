@@ -3635,7 +3635,7 @@ input[type="button"].btn-block {
 .dropdown-menu > li > a:focus {
   color: #ffffff;
   text-decoration: none;
-  background-color: #2c3e50;
+  background-color: #ffffff;
 }
 
 .dropdown-menu > .active > a,
@@ -5100,7 +5100,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #2c3e50;
+  color: #fffff;
   background-color: transparent;
 }
 
@@ -6950,7 +6950,7 @@ button.close {
 }  
 
 .carousel-caption h1 {
-  font-size: 100%;
+  font-size: 150%;
   padding-bottom: 25px;
 
 }  
@@ -6961,7 +6961,7 @@ button.close {
     left: 15%;
     padding-bottom: 50px;
     font-size: 240%;
-    margin-bottom: 253px;
+    margin-bottom: 300px;
   }
 }
 
