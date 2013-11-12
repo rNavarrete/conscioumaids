@@ -33,8 +33,12 @@
 ================================================== -->
 <div id="myCarousel">
   <div class="carousel-inner">
+
     <div class="item active">
       <%= image_tag ("maidspicblur4.jpg"), :style => "width: 100%" %>
+
+      
+
         <div class="carousel-caption">
           <h1>"Your time is valuable. Let us worry about the mess!"</h1>
             <p><i class="fa fa-check-square-o"></i> 200% Guarantee. Money back if not satisfied.</small></p>
@@ -44,8 +48,26 @@
             <p><i class="fa fa-check-square-o"></i> We bring all supplies.</small></p>
             <p><i class="fa fa-check-square-o"></i> On time service.</small></p>
             <p><i class="fa fa-check-square-o"></i> Cancel Anytime.</small></p>
+            <h4 style="margin-left: 20px;">Enter your information below to set up an appointment.</h4>
+
+
           
       <div class="container">
+
+<% flash.each do |name, msg| %>
+  <% if msg.is_a?(String) %>
+    <div class="alert alert-<%= name == :notice ? "success" : "error" %>", style="width: 64%">
+      <a class="close" data-dismiss="alert">&#215;</a>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    </div>
+  <% end %>
+<% end %>
+
+
+
+
+
+
         <%= form_for @lead, html: {class: "form-horizontal", role: "form", style: "margin-left: 50px; padding-top: 50px"}  do |f| %>
           
           <% if @lead.errors.any? %>
@@ -61,6 +83,7 @@
          
 
           <div class="form-group">
+
             <%= f.label :email, :class => "col-sm-2 control-label" %>
             <div class="col-sm-5">
               <%= f.text_field :email, :class => "form-control", :style => "width: 60%" %>
@@ -83,7 +106,7 @@
 
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-3">
-              <%= f.submit "Request Quote", :class => "btn btn-danger" %>
+              <%= f.submit "Call Me", :class => "btn btn-danger" %>
             </div>  
           </div>
         <% end %>
