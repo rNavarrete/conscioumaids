@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20131110192146) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "leads", force: true do |t|
     t.string   "email"
     t.string   "name"
