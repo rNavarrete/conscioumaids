@@ -6941,7 +6941,7 @@ button.close {
   background: linear-gradient(to bottom,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
   position: static;
-  font-size: 100%;
+  font-size: 110%;
 
 }
 
@@ -6950,8 +6950,8 @@ button.close {
 }  
 
 .carousel-caption h1 {
-  font-size: 150%;
-  padding-bottom: 25px;
+  font-size: 30px;
+  padding-bottom: 4px;
 
 }  
 
@@ -6970,7 +6970,7 @@ button.close {
   .carousel-caption {
     right: 40%;
     left: 40%;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     margin-bottom: 5px;
 
   }
