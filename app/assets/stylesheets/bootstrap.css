@@ -6754,17 +6754,17 @@ button.close {
 }
 
 .carousel {
-  position: relative;
+  position: static;
 }
 
 .carousel-inner {
-  position: relative;
+  position: static;
   width: 100%;
   overflow: hidden;
 }
 
 .carousel-inner > .item {
-  position: relative;
+  position: static;
   display: none;
   -webkit-transition: 0.6s ease-in-out left;
           transition: 0.6s ease-in-out left;
@@ -6928,8 +6928,8 @@ button.close {
 
 .carousel-caption {
   bottom: 0px;
-  left: 15%;
-  right: 15%;
+  left: 5%;
+  right: 5%;
   color: #ffffff;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
   background: -moz-linear-gradient(top,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 99%, rgba(0,0,0,0) 100%); /* FF3.6+ */
@@ -6939,9 +6939,8 @@ button.close {
   background: -ms-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%); /* IE10+ */
   background: linear-gradient(to bottom,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-  position: relative;
-  font-size: 200%;
-
+  position: static;
+  font-size: 100%;
 
 }
 
@@ -6950,12 +6949,12 @@ button.close {
 }  
 
 .carousel-caption h1 {
-  font-size: 150%;
+  font-size: 100%;
   padding-bottom: 25px;
 
 }  
 
-@media screen and (min-width: 1300px) {
+@media (min-width: 1300px) {
   .carousel-caption {
     right: 15%;
     left: 15%;
@@ -6963,6 +6962,25 @@ button.close {
     font-size: 240%;
     margin-bottom: 253px;
   }
+}
+
+@media screen and (min-width: 1260px) {
+
+  .carousel-caption {
+    right: 40%;
+    left: 40%;
+    padding-bottom: 50px;
+    margin-bottom: 5px;
+
+  }
+
+  .carousel-caption h1 {
+    font-size: 200%;
+  }  
+
+  .carousel-caption p {
+    font-size: 145%;
+    padding-bottom: 5px;
 }
 
 @media screen and (max-width: 800px) {
@@ -6974,14 +6992,18 @@ button.close {
     height: 30px;
     margin-top: -15px;
     margin-left: -15px;
-    font-size: 30px;
+    font-size: 30%;
+    overflow:auto;
+
   }
   .carousel-caption {
-    right: 20%;
-    left: 20%;
-    padding-bottom: 30px;
+    right: 5%;
+    left: 5%;
+    padding-bottom: 10px;
     font-size: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
   }
   .carousel-indicators {
     bottom: 20px;
@@ -6993,12 +7015,11 @@ button.close {
   .carousel-caption {
     right: 20%;
     left: 20%;
-    padding-bottom: 30px;
-    font-size: 80%;
+    padding-bottom: 5px;
+    font-size: 200%;
     margin-bottom: 10px;
   }
 }
-
 
 
 .clearfix:before,
