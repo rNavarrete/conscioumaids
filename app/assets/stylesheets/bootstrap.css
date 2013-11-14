@@ -6759,7 +6759,7 @@ button.close {
 }
 
 .carousel-inner {
-  position: static;
+  position: absolute;
   width: 100%;
   overflow: hidden;
 }
@@ -6929,7 +6929,7 @@ button.close {
 
 .carousel-caption {
   bottom: 0px;
-  left: 5%;
+  left:  0px;
   right: 5%;
   color: #ffffff;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
@@ -6940,8 +6940,8 @@ button.close {
   background: -ms-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%); /* IE10+ */
   background: linear-gradient(to bottom,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-  position: static;
   font-size: 110%;
+  width: 60%;
 
 }
 
@@ -6969,7 +6969,7 @@ button.close {
 
   .carousel-caption {
     right: 40%;
-    left: 40%;
+    left: 40px;
     padding-bottom: 30px;
     margin-bottom: 5px;
 
@@ -6983,9 +6983,36 @@ button.close {
     font-size: 145%;
     padding-bottom: 5px;
   }  
+
+  .carousel-caption .bg{
+    visibility: hidden;
+  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
+
+  .carousel-caption {
+    right: 40%;
+    left: 40%;
+    padding-bottom: 30px;
+    margin-bottom: 160px;
+
+  }
+
+  .carousel-caption h1 {
+    font-size: 200%;
+  }  
+
+  .carousel-caption p {
+    font-size: 145%;
+    padding-bottom: 5px;
+  }  
+  .carousel-caption .bg{
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 800px) {
   .carousel-control .glyphicons-chevron-left,
   .carousel-control .glyphicons-chevron-right,
   .carousel-control .icon-prev,
@@ -6995,7 +7022,8 @@ button.close {
     margin-top: -15px;
     margin-left: -15px;
     font-size: 30%;
-    overflow:auto;
+    overflow:none;
+
   }  
 
   .carousel-caption {

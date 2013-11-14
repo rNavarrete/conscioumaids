@@ -13,6 +13,8 @@
  *= require_tree .
  */
 
+
+
 #table {
 background: -moz-linear-gradient(top,  rgba(0,0,0,0.77) 0%, rgba(0,0,0,0.77) 1%, rgba(0,0,0,0.77) 15%, rgba(0,0,0,0.77) 30%, rgba(0,0,0,0.77) 46%, rgba(0,0,0,0.77) 63%, rgba(0,0,0,0.77) 78%, rgba(0,0,0,0.77) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.77)), color-stop(1%,rgba(0,0,0,0.77)), color-stop(15%,rgba(0,0,0,0.77)), color-stop(30%,rgba(0,0,0,0.77)), color-stop(46%,rgba(0,0,0,0.77)), color-stop(63%,rgba(0,0,0,0.77)), color-stop(78%,rgba(0,0,0,0.77)), color-stop(100%,rgba(0,0,0,0.77))); /* Chrome,Safari4+ */
@@ -122,12 +124,7 @@ body {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
-.carousel {
-  margin-bottom: 0px;
-  height: 500px;
-  width: 100%;
-}
+
 /* Since positioning the image, we need to help out the caption */
 
 
@@ -136,7 +133,7 @@ body {
 .carousel .item {
   height: 500px;
   background-color:#bbb;
-  position: relative;
+  position: absolute;
 }
 
 .carousel img {
