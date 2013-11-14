@@ -3,22 +3,19 @@
     <div class="navbar navbar-inverse navbar-static-top">
       
         <div class="navbar-header">
-	    <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </a>
-        <a><%= link_to "Conscious Maids", root_url,  :class => "navbar-brand"%></a>
+	  <a class="navbar-brand" href="/" style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 18px;">Conscious Maids</a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Who We Are</a></li>
+          <ul class="nav navbar-nav pull-right" style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;">
             <li><%= link_to "Services & Prices",prices_path %></li>
             <li><a href="#contact">Where we serve</a></li>
-            <li class="navbar-text">Call Now (310)697-2843</li>
+            <li class="navbar-text" style="font-style: bold;">Call Now (310)697-2843</li>
+
+               <li><form method="get" action="confirmation">
+                 <button class= "btn3d btn btn-danger btn-sm" style="margin-top: 9px; margin-right:0px;" type="submit">Book in 60 secs.</button>
+               </form></li>
           </ul>
-           <div><button class='btn3d btn btn-danger btn-md pull-right' href='/prices' style="margin-top: 9px; margin-right:40px; color: !important;">Book Now</button></div> 
-          </div>
+           
 
     </div>
   </div><!-- /container -->
@@ -28,7 +25,7 @@
 <!-- Carousel
 ================================================== -->
 <div id="myCarousel">
-  <div class="carousel-inner" style="padding-top: 105px;">
+  <div class="carousel-inner">
     <div class="item active">
       <%= image_tag ("baby.jpg"), :style => "width: 100%" %>  
       <div class="carousel-caption" style="left:15px; font-style:italic ">
@@ -46,8 +43,12 @@
 
 <div class="container marketing">
   <h1 style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 100; font-size: 30px; padding-bottom: 20px; text-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);
-              ">OUR 200% MONEY BACK GUARANTEE
-If you’re not happy, we come back and re-clean and if you still don’t think we did a good enough job to recommend us we issue a full refund!</h1>
+              "><i class="fa fa-check-square"></i> OUR 200% MONEY BACK GUARANTEE
+If you’re not happy, we come back and re-clean and if you still don’t think we did a good enough job to recommend us we issue a full refund! </h1>
+
+  <h2 style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 100; font-size: 30px; padding-bottom: 20px; text-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);
+              "><i class="fa fa-check-square"></i> SAFE SHOPPING GUARANTEE
+You'll pay nothing if unauthorized charges are made to your credit card as a result of booking with us.</h2>
 
     <div class="container">
 

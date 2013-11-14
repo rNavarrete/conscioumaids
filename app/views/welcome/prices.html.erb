@@ -13,24 +13,18 @@
   <div class="container">
     <div class="navbar navbar-inverse navbar-static-top">
       
-        <div class="navbar-header">
-	    <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </a>
-        <a><%= link_to "Conscious Maids", root_url,  :class => "navbar-brand", :style => "font-family: 'Lato', sans-serif; font-weight: 300;"%></a>
+         <div class="navbar-header">
+        <a class="navbar-brand" href="/" style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 18px;">Conscious Maids</a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav" style="font-family: 'Lato', sans-serif; font-weight: 300;">
-            <li><a href="#">Who We Are</a></li>
+          <ul class="nav navbar-nav pull-right" style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;">
             <li><%= link_to "Services & Prices",prices_path %></li>
             <li><a href="#contact">Where we serve</a></li>
-            <li class="navbar-text">Call Now (310)697-2843</li>
-          </ul>
-           <form method="get" action="confirmation" class="pull-right" style="padding-botton: 5px; margin-bottom: 9px; bottom: 20px;">
-                 <button class= "btn3d btn btn-danger btn-md" style="margin-top: 3px;"type="submit">Book in 60 secs.</button>
-               </form>
+            <li class="navbar-text" style="font-style: bold;">Call Now (310)697-2843</li>
+
+               <li><form method="get" action="confirmation">
+                 <button class= "btn3d btn btn-danger btn-sm" style="margin-top: 9px; margin-right:0px;" type="submit">Book in 60 secs.</button>
+               </form></li>
       </div>         
 
     </div>
@@ -64,7 +58,7 @@
             <tr><td>$50</td><td>$40</td><td>$20</td><td>$20</td><td>$20</td></tr>
           </table>        
            <form method="get" action="confirmation" class="pull-right" style="padding-botton: 5px; margin-bottom: 9px; bottom: 20px;">
-                 <button class= "btn3d btn btn-danger btn-lg" style="margin-top: 3px;"type="submit">Book in 60 secs.</button>
+                 <button class= "btn3d btn btn-danger btn-lg" style="margin-top: 3px; "type="submit">Book in 60 secs.</button>
                </form>
 
 <h2 style="color: white;"><small>*Prices may fluctuate according to home size.</small></h2>
@@ -104,26 +98,41 @@
 
 <div class="container marketing">
 
-  <div class="text-center" style="padding-bottom: 15px;"> 
-    <h1> Why should you choose Conscious Maids?</h1>
+  <div class="text-center" style="padding-bottom: 15px; text-align:center; "> 
+    <h1 style="font-family: 'Lato', sans-serif; font-weight: 900; font-size: 40px;"> Why you should choose Conscious Maids:</h1>
   </div> 
 
   <!-- Three columns of text below the carousel -->
   <div class="row">
+
+    
+    
+
     <div class="col-md-4 text-center">
-      <%= image_tag ("maid3.jpg"), :class => "img-circle" %>
-      <h2>Professional Maid Services</h2>
-      <p>Conscious Maids conducts background checks and screens our maids and cleaning service providers.Our professional personnel have years of experience servicing all types of residences, plus the tools, skills and dedication necessary for excellent service. </p>
+      <%= image_tag ("maids1.jpg") %>
+      <h2 style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 900; font-size: 28px;"> Cleaning Services never looked so good!</h2>
+      <ul><i class="fa fa-check-square"></i> Cleaning Team (2 people)</br>
+        <i class="fa fa-check-square"></i> All supplies and green cleaning products.</br>
+        <i class="fa fa-check-square"></i> Included Insurance against accidents.</br>
+         <i class="fa fa-check-square"></i> Top-notch Customer service.</br>
+        <i class="fa fa-check-square"></i>  Unlimited access by phone, email or chat.</br>
+        <i class="fa fa-check-square"></i>  200% Satisfaction Guaranteed.</br>
+      </ul>
+    </div>    
+
+
+    <div class="col-md-4 text-center">
+      <%= image_tag ("lock.jpg") %>
+      <h2 style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 900; font-size: 28px;">Trustworthy & Secure</h2>
+      <p style="text-align:left; font-family: 'Lato', sans-serif; font-weight: 100; font-size: 19px; text-align: center;"> Sophisticated encryption keeps your personal d
+       details safe. </p>
     </div>
+
+
     <div class="col-md-4 text-center">
-      <%= image_tag ("200r1.png") %>
-      <h2>OUR 200% MONEY BACK GUARANTEE</h2>
-      <p>If not satisfied we will take the time to re-clean within 24hrs. If for any reason you are still not satisfied with the service, or wouldn't recommend our services to a friend, we will refund you no questions asked!</p>
-    </div>
-    <div class="col-md-4 text-center">
-      <%= image_tag ("map4.png"), :class => "img-circle" %>
-      <h2>Silicon Valley Never Looked So Good!</h2>
-      <p>Happily serving the Silicon Valley area. From San Jose to Palo Alto we are ready to serve you. Available seven days a week from 8am to 6pm. Contact us to see if we service your area.</p>
+      <%= image_tag ("green7.gif"), :class => "img-circle" %>
+      <h2 style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 900; font-size: 28px;"> Eco-friendly Green Cleaning</h2>
+      <p style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 300; font-size: 19px;">Our cleaning teams have been trained to use only non-toxic organic cleaning products which are certified by the EPA as being the safest to humans and animals.</p>
     </div>
   </div><!-- /.row -->
 
