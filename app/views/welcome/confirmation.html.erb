@@ -1,17 +1,110 @@
+<div class="navbar-wrapper">
+  <div class="container">
+    <div class="navbar navbar-inverse navbar-static-top">
+      
+        <div class="navbar-header">
+	    <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </a>
+        <a><%= link_to "Conscious Maids", root_url,  :class => "navbar-brand"%></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Who We Are</a></li>
+            <li><%= link_to "Services & Prices",prices_path %></li>
+            <li><a href="#contact">Where we serve</a></li>
+            <li class="navbar-text">Call Now (310)697-2843</li>
+          </ul>
+           <div><button class='btn3d btn btn-danger btn-sm pull-right' href='/prices' style="margin-top: 9px; margin-right:40px; color: !important;">Book Now</button></div> 
+          </div>
 
-
-<% flash.each do |name, msg| %>
-  <% if msg.is_a?(String) %>
-    <div class="alert alert-<%= name == :notice ? "success" : "error" %>", style="width: 100%">
-      <a class="close" data-dismiss="alert">&#215;</a>
-      <%= content_tag :div, msg, :id => "flash_#{name}" %>
     </div>
-  <% end %>
-<% end %>
+  </div><!-- /container -->
+</div><!-- /navbar wrapper -->
 
 
-<h1>confirmation Page</h1>
+<!-- Carousel
+================================================== -->
+<div id="myCarousel">
+  <div class="carousel-inner" style="padding-top: 105px;">
+    <div class="item active">
+      <%= image_tag ("baby.jpg"), :style => "width: 100%" %>  
+      <div class="carousel-caption" style="left:15px; font-style:italic ">
+  	      <h2> "YOU'RE 60 SECONDS AWAY FROM AN AWESOME CLEANING"</h2>
+  	</div>	
+    </div>
+  </div>
+</div>
+<!-- /.carousel -->
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+  <h1 style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 100; font-size: 30px; padding-bottom: 20px; text-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);
+              ">OUR 200% MONEY BACK GUARANTEE
+If you’re not happy, we come back and re-clean and if you still don’t think we did a good enough job to recommend us we issue a full refund!</h1>
+
+    <div class="container">
+
+      <script type="text/javascript" src="https://www.formstack.com/forms/js.php?1623950-zGhmPRCnfQ-v3"></script><noscript><a href="https://www.formstack.com/forms/?1623950-zGhmPRCnfQ" title="Online Form">Online Form - Checkout Page</a></noscript><div style="text-align:right; font-size:x-small;"><a href="http://www.formstack.com?utm_source=h&utm_medium=jsembed&utm_campaign=fa&fa=h,1623950" title="Online Form Maker">Online Form Maker</a></div>
+    </div>  
+  
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>Conscious Maids LLC</p>
+  </footer>
+
+</div><!-- /.container -->
 
 
 
-<script type="text/javascript" src="https://www.formstack.com/forms/js.php?1623950-zGhmPRCnfQ-v3"></script><noscript><a href="https://www.formstack.com/forms/?1623950-zGhmPRCnfQ" title="Online Form">Online Form - Checkout Page</a></noscript><div style="text-align:right; font-size:x-small;"><a href="http://www.formstack.com?utm_source=h&utm_medium=jsembed&utm_campaign=fa&fa=h,1623950" title="Online Form Maker">Online Form Maker</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
