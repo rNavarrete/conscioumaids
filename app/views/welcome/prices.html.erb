@@ -19,17 +19,19 @@
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </a>
-        <a><%= link_to "Conscious Maids", root_url,  :class => "navbar-brand"%></a>
+        <a><%= link_to "Conscious Maids", root_url,  :class => "navbar-brand", :style => "font-family: 'Lato', sans-serif; font-weight: 300;"%></a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Who We Are</a></li>
+          <ul class="nav navbar-nav" style="font-family: 'Lato', sans-serif; font-weight: 300;">
+            <li><a href="#">Who We Are</a></li>
             <li><%= link_to "Services & Prices",prices_path %></li>
             <li><a href="#contact">Where we serve</a></li>
             <li class="navbar-text">Call Now (310)697-2843</li>
           </ul>
-           <div><button class='btn3d btn btn-danger btn-sm pull-right' href='/prices' style="margin-top: 9px; margin-right:40px; color: !important;">Book Now</button></div> 
-          </div>
+           <form method="get" action="confirmation" class="pull-right" style="padding-botton: 5px; margin-bottom: 9px; bottom: 20px;">
+                 <button class= "btn3d btn btn-danger btn-md" style="margin-top: 3px;"type="submit">Book in 60 secs.</button>
+               </form>
+      </div>         
 
     </div>
   </div><!-- /container -->
@@ -61,6 +63,9 @@
             <tr><th>Move In/Move Out</th><th>Clean Interior Windows</th><th>Clean Inside Fridge</th><th>Clean Inside Oven</th><th>One load of Laundry</th></tr>
             <tr><td>$50</td><td>$40</td><td>$20</td><td>$20</td><td>$20</td></tr>
           </table>        
+           <form method="get" action="confirmation" class="pull-right" style="padding-botton: 5px; margin-bottom: 9px; bottom: 20px;">
+                 <button class= "btn3d btn btn-danger btn-lg" style="margin-top: 3px;"type="submit">Book in 60 secs.</button>
+               </form>
 
 <h2 style="color: white;"><small>*Prices may fluctuate according to home size.</small></h2>
           
