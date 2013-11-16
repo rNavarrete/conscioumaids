@@ -9,21 +9,31 @@ class ApplicationController < ActionController::Base
   private
 
   def mobile_device?
-  	if session[:mobile_param]
-       session[:mobile_param] == "1"
-    else   		
-  	  request.user_agent =~ /Mobile|webOS/
-    end
+    session.has_key?(:mobile) ? session[:mobile] : request.user_agent =~ /Mobile|webOS/
   end
 
-  helper_method :mobile_device?  	
+  helper_method :mobile_device?
+
+
+  def device_type
+    request.env['mobvious.device_type']
+  end
+
+  helper_method :device_type
+
+
+
 
   def prepare_for_mobile
-  	session[:mobile_param] = params[:mobile] if params[:mobile]
-  	request.format = :mobile if mobile_device?
-  	
-  end
-
-
+    if request.format == 'text/html'
+      case File.extname(URI.parse(request.fullpath).path)
+          when '.html'
+            session[:mobile] = false
+          when '.mobile'
+            session[:mobile] = true
+          end
+          request.format = :mobile if mobile_device?
+          request.format = :tablet if device_type == :tablet
+        end
+    end
 end
- 

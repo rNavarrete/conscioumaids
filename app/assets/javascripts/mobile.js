@@ -1,1 +1,3 @@
-$.jQTouch({});
+<script>
+      var jQT = new $.jQTouch();
+</script>
