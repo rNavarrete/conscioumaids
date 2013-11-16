@@ -1,1 +1,45 @@
-<h1>This is a tablet bitch!!!</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <html>
+    <head>
+      <title><%= h(yield(:title) || "Untitled") %></title>
+      <link rel="stylesheet" href="themes/consciousmaids.min.css" />
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
+      <%= stylesheet_link_tag "jqtouch/jqtouch.css", "jqtouch/themes/apple/theme.css" %>
+      <%= javascript_include_tag "jqtouch/jquery.1.4.2.js", "jqtouch/jquery.min.js", "mobile" %>
+      <link type="text/css" rel="stylesheet" media="mobile" href="jqtouch/themes/apple/theme.css">
+      <script>
+        var jQT = new $.jQTouch();
+      </script>
+      <%= yield(:head) %>
+    </head>
+   
+
+    <body>
+      <div class="current" id="jqt">
+
+        <%= yield %>
+      
+      </div>  
+    </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
