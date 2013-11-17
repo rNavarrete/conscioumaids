@@ -1,7 +1,6 @@
 <style type="text/css">
 .table {font-size:12px;color:#fbfbfb;width:100%;border-width: 1px;border-color: #686767;border-collapse: collapse;}
 .table th {font-size:16px;background-color:#171515;border-width: 1px;padding: 8px;border-style: solid;border-color: #686767;text-align:left;}
-.table tr {background-color:transparent;}
 .table td {font-size:16px;border-width: 1px;padding: 8px;border-style: solid;border-color: #686767;}
 .table tr:hover {background-color:#171515;}
 </style>
@@ -20,7 +19,7 @@
           <ul class="nav navbar-nav pull-right" style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;">
             <li><%= link_to "Services & Prices",prices_path %></li>
             <li><a href="#contact">Where we serve</a></li>
-            <li class="navbar-text" style="font-style: bold;">Call Now (310)697-2843</li>
+            <li class="navbar-text" style="font-style: bold;">Call Now (650)479-5024</li>
 
                <li><form method="get" action="confirmation">
                  <button class= "btn3d btn btn-danger btn-sm" style="margin-top: 9px; margin-right:0px;" type="submit">Book in 60 secs.</button>
@@ -37,8 +36,8 @@
 <div id="myCarousel">
   <div class="carousel-inner">
     <div class="item active">
-      <%= image_tag ("interior.jpg"), :style => "width: 100%" %>
-        <div class="carousel-caption" id="table" style="padding-top: 20px; width: 61%; ;">
+      <%= image_tag ("interior1.jpg"), :style => "width: 100%" %>
+        <div class="carousel-caption" id="table" style="padding-top: 5px; width: 61%; ;">
 
         <h3>Rates:</h3>
           <table class="table table-bordered" border="1">
@@ -63,29 +62,6 @@
 
 <h2 style="color: white;"><small>*Prices may fluctuate according to home size.</small></h2>
           
-      <div class="container">
-        <%= form_for @lead, html: {class: "form-horizontal", role: "form", style: "margin-left: 50px; padding-top: 50px"}  do |f| %>
-          
-          <% if @lead.errors.any? %>
-            <div id="error_explanation">
-              <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
-            </div>
-            <ul>
-              <% @lead.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-              <% end %>
-            </ul>
-          <% end %>  
-        <% end %>
-    </div>
-
-
-
-
-
-
-
-  
     </div>
   </div>
 </div>
@@ -160,7 +136,7 @@
     <%= image_tag ("phone.png"), :class => "featurette-image  pull-right"%>
 
     <h2 class="featurette-heading"> Supreme Customer Service. <span class="text-muted">No surprises, No Funny Business.</span></h2>
-    <p class="lead">We take our client's satisfaction very seriously. If the client wouldn't recommend us to their friend's we didn't do our job. Schedule an cleaning  today (310) 697-2843</p>
+    <p class="lead">We take our client's satisfaction very seriously. If the client wouldn't recommend us to their friend's we didn't do our job. Schedule an cleaning  today (650) 479-5024</p>
   </div>
 
   <hr class="featurette-divider">
