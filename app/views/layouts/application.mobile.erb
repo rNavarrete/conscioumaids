@@ -16,5 +16,16 @@
         <div data-role="page">
           <%= yield %>
       </div>
+
+
+
+
+      $(function() {
+        $.ajaxSetup({
+          beforeSend: function ( xhr ) {
+            xhr.setRequestHeader("Accept", "text/javascript") 
+          }
+        }
+      }
     </body>
   </html>

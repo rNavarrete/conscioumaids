@@ -1,5 +1,6 @@
 Maids::Application.routes.draw do
   resources :leads
+  resources :welcome
 
   get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.

@@ -17,6 +17,8 @@ p{
     border-bottom:2px solid black;
 }
 
+
+
 </style>
 
 
@@ -32,16 +34,36 @@ p{
 <div data-role="content">
  		<p style="font-family: Lato, sans-serif; font-weight: 900; padding: 0px; font-family: Lato, sans-serif; font-weight: 300; font-size: 20px;">Top Quality Home Cleaning.<br>200% Money Back Guarantee.</p>
 
-	<form>
-    <input type="text" name="text-1" id="text-1" value=""  placeholder="Email">
-    <input type="text" data-clear-btn="true" name="text-3" id="text-3" value=""  placeholder="Phone">
-    <p><a href="#" data-role="button" data-mini="true" data-inline="true" data-icon="check" data-theme="b">Request a Quote</a></p>
-  </form>
-</div><!-- /content -->
+
+
+ <%= form_for(@lead) do |f| %>
+  <% if @lead.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
+
+      <ul>
+      <% @lead.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.text_field :name, :placeholder => "Name" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :phone, :placeholder => "Phone"  %>
+  </div>
+    <%= f.submit "Get Quote", :style => "btn"%>
+<% end %>
+</div>
 
 <div data-role="footer" style="height:40px;">
-	<h5 style="font-family: Lato, sans-serif; font-weight: 300;"> Page Footer</h5>
 </div><!-- /footer -->
+
+
+
 
 
 
