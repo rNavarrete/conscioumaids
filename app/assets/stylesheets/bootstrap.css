@@ -45,6 +45,7 @@ body {
 
 a {
   background: transparent;
+  color: #0000FF;
 }
 
 a:focus {
@@ -220,7 +221,7 @@ table {
   a,
   a:visited {
     text-decoration: underline;
-    color:#ffffff;
+    color:#0000FF;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -323,7 +324,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #ffffff;
+  color: #0000FF;
   text-decoration: underline;
 }
 
