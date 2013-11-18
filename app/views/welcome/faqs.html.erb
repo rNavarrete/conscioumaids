@@ -1,0 +1,140 @@
+    <script>
+  $(function() {
+    $( "#accordion" ).accordion({
+        collapsible: true
+
+    });
+  });
+</script>
+
+<div class="navbar-wrapper">
+  <div class="container">
+    <div class="navbar navbar-inverse navbar-static-top" style="color:white;">
+      
+        <div class="navbar-header">
+        <a class="navbar-brand" href="/" style="font-family: 'Lato', sans-serif; font-weight: 100; font-size: 15px; color: white;">Conscious Maids</a>
+        </div>
+        
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav pull-right" style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;">
+            <li><%= link_to "Services & Prices",prices_path, :style => "font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;" %></li>
+            <li><a style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;" href="/area">Where we serve</a></li>
+            <li><a style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;" href="/faqs">FAQ</a></li>
+
+            <li class="navbar-text"><strong>Mon-Sun: 8am - 6pm</strong></li>
+
+            <li class="navbar-text"><strong>Call Now (650)479-5024</strong></li>
+
+
+               <li><form method="get" action="confirmation">
+                 <button class= "btn3d btn btn-danger btn-sm" style="margin-top: 9px; margin-right:0px;" type="submit">Book in 60 secs.</button>
+               </form></li>
+
+
+
+
+    
+          </ul>
+
+
+        </div>
+
+    </div>
+  </div><!-- /container -->
+</div><!-- /navbar wrapper -->
+
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel">
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag ("crib1.jpg"), :style => "width: 100%; height: 750px;" %>
+        <div class="carousel-caption" id="table" style="padding-top: 5px; width: 61%; margin-bottom: 30px;">
+
+        	<h1 style="font-size: 100px; margin-bottom:47px;">FAQ</h1>
+
+        
+  </div>
+</div>
+<!-- /.carousel -->
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+
+  <div class="text-center" style="padding-bottom: 15px; text-align:center; "> 
+    <h6 style="font-family: 'Lato', sans-serif; font-weight: 900; font-size: 40px;"> Frequently Asked Questions</h6>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-2">
+
+
+			<div id="accordion">
+			  <h3>Section 1</h3>
+			  <div>
+			    <p>
+			    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+			    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+			    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+			    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+			    </p>
+			  </div>
+			  <h3>Section 2</h3>
+			  <div>
+			    <p>
+			    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+			    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+			    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+			    suscipit faucibus urna.
+			    </p>
+			  </div>
+			  <h3>Section 3</h3>
+			  <div>
+			    <p>
+			    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+			    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+			    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+			    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+			    </p>
+			    <ul>
+			      <li>List item one</li>
+			      <li>List item two</li>
+			      <li>List item three</li>
+			    </ul>
+			  </div>
+			  <h3>Section 4</h3>
+			  <div>
+			    <p>
+			    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+			    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+			    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+			    mauris vel est.
+			    </p>
+			    <p>
+			    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+			    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+			    inceptos himenaeos.
+			    </p>
+			  </div>
+			</div>
+
+
+
+    </div>  
+  </div> 
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer style="height: 20px;">
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>Conscious Maids LLC</p>
+  </footer>
+
+</div><!-- /.container -->

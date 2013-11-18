@@ -13,7 +13,13 @@ class WelcomeController < ApplicationController
   def create
   	@lead = Lead.new(lead_params)
   end
-  
+
+  def area
+  end  
+
+  def faqs
+  end
+      
   private
   
   def lead_params

@@ -13,6 +13,11 @@ Maids::Application.routes.draw do
 
   get 'confirmation' => 'welcome#confirmation'
 
+  get 'area' => 'welcome#area'
+
+  get 'faqs' => 'welcome#faqs'
+
+
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

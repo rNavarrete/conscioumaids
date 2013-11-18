@@ -4835,6 +4835,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 21px;
+  color: #ffffff;
 }
 
 @media (max-width: 767px) {
