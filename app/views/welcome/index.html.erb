@@ -3,14 +3,14 @@
     <div class="navbar navbar-inverse navbar-static-top" style="color:white;">
       
         <div class="navbar-header">
-        <a class="navbar-brand" href="/" style="font-family: 'Lato', sans-serif; font-weight: 100; font-size: 15px; color: white;">Conscious Maids</a>
+        <a class="navbar-brand" href="/" style="font-family: 'Lato', sans-serif; font-weight: 100; font-size: 15px; color: white;"><strong>Conscious Maids</strong></a>
         </div>
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav pull-right" style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;">
-            <li><%= link_to "Services & Prices",prices_path, :style => "font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;" %></li>
-            <li><a style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;" href="/area">Where we serve</a></li>
-            <li><a style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;" href="/faqs">FAQ</a></li>
+            <li><a style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;" href="/prices"><strong>Services/Rates</strong></a></li>
+            <li><a style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;" href="/area"><strong>Where we serve</strong></a></li>
+            <li><a style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;" href="/faqs"><strong>FAQ</strong></a></li>
 
             <li class="navbar-text"><strong>Mon-Sun: 8am - 6pm</strong></li>
 
@@ -41,15 +41,18 @@
   <div class="carousel-inner">
 
     <div class="item active">
+       
 
-        <%= image_tag ("crib1.jpg"), :style => "width: 100%; height: 700px;"%>
+      <div style="filter: grayscale(100%) sepia(100%);"> 
+        <%= image_tag ("crib1.jpg"), :style => "width: 100%; height: 700px;border-bottom:1px solid black; -webkit-filter: blur(1px);"%>
+      </div>  
 
 
 
-          <div class="carousel-caption" style="width: 100%; left: 0px; right: 0px; height: 87%; padding-top: 0px; padding-bottom: 60px;">
+          <div class="carousel-caption" style="width: 100%; left: 0px; right: 0px; height: 87%; padding-top: 0px; padding-bottom: 60px; ">
 
             
-              <h1 style=" margin-top: 70px; font-family: 'Lato', sans-serif; font-weight: 900; font-size: 45px; padding-bottom: 20px; text-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);"> Professional Green Home Cleaning</h1>
+              <h1 style=" margin-top: 70px; font-family: 'Lato', sans-serif; font-weight: 900; font-size: 45px; padding-bottom: 20px; text-shadow: 0 5px 7px rgba(0, 0, 0, 1); text-align: center;"> Professional Green Home Cleaning</h1>
                     
                     <div class="col-md-3 offset-col-md-4">
 
@@ -57,14 +60,14 @@
                             border-width:7px;" width="420" height="355" src="//www.youtube.com/embed/4wqjOgS9bRk?modestbranding=1&amp;controls=0&amp;showinfo=0&amp;rel=0" frameborder="0" allowfullscreen style="border-style: bold;"></iframe>
                     </div>
                  <div class="col-md-6 col-md-offset-2 margin-bottom: 10; 0px;">
-                 <h1 style="font-family: 'Lato', sans-serif; font-weight: 400; font-size: 40px; text-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);"><em>Safe and Reliable Service</em></h1>     
-                  <h3 style="text-align:left; font-family: 'Lato', sans-serif; font-weight: 400; font-size: 30px; text-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);"><i class="fa fa-check-square-o"></i> 200% Guarantee. Money back if not satisfied</h3>
-                  <h3 style="font-family: 'Lato', sans-serif; font-weight: 400; text-align:center; font-size: 30px; text-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);"><i class="fa fa-check-square-o"></i> Organic cleaning products</h3>
-                  <h3 style="font-family: 'Lato', sans-serif; font-weight: 400; text-align:center; font-size: 30px; text-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);"><i class="fa fa-check-square-o"></i>Two Person Team </h3>
-                  <h3 style="font-family: 'Lato', sans-serif; font-weight: 400; text-align:center; font-size: 30px; text-shadow: 0 2px 7px rgba(0, 0, 0, 0.6);"><i class="fa fa-check-square-o"></i> No hidden fees</h3>
+                 <h1 style="font-family: 'Lato', sans-serif; font-weight: 400; font-size: 40px; text-shadow: 0 5px 7px rgba(0, 0, 0, .9);"><em>Safe and Reliable Service</em></h1>     
+                  <h3 style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 400; font-size: 30px; text-shadow: 0 5px 7px rgba(0, 0, 0, .9);"><i class="fa fa-check-square-o"></i> 200% Money Back Guarantee.</h3>
+                  <h3 style="font-family: 'Lato', sans-serif; font-weight: 400; text-align:center; font-size: 30px; text-shadow: 0 5px 7px rgba(0, 0, 0, .9);"><i class="fa fa-check-square-o"></i> Organic cleaning products</h3>
+                  <h3 style="font-family: 'Lato', sans-serif; font-weight: 400; text-align:center; font-size: 30px; text-shadow: 0 5px 7px rgba(0, 0, 0, 1);"><i class="fa fa-check-square-o"></i>Two Person Team </h3>
+                  <h3 style="font-family: 'Lato', sans-serif; font-weight: 400; text-align:center; font-size: 30px; text-shadow: 0 5px 7px rgba(0, 0, 0, .9);"><i class="fa fa-check-square-o"></i> No hidden fees</h3>
 
                   <form method="get" action="confirmation">
-                   <button class= "btn3d btn btn-danger btn-lg" style="margin-top: 10px; margin-right:0px;" type="submit">BOOK IN 60 SECS.</button>
+                   <button class= "btn3d btn btn-danger btn-lg" style="margin-top: 15px; margin-right:0px;" type="submit">BOOK IN 60 SECS.</button>
                   </form>
                 
       </div>   
@@ -210,7 +213,7 @@
         <%= image_tag ("dog8.jpg"), :class => "featurette-image pull-right"%>
 
       
-    <h2 class="featurette-heading">Protect your family. <span class="text-muted"> Healthy families are happy families.</span></h2>
+    <h2 class="featurette-heading">Protect your family. <span class="text-muted" style="font-size:40px"> Healthy families are happy families.</span></h2>
     <p class="lead">You wouldn't believe some of the stuff that's in cleaning products. Even cleaning products that are labeled as being green are bogus. Take a look at the cleaning products  <a href="http://www.ewg.org/cleaners/hallofshame/">"Hall of Shame."</a></p>
   </div>
 
@@ -218,7 +221,7 @@
 
 <div class="featurette">
     <%= image_tag ("clipboard.png"), :class => "featurette-image  pull-left"%>
-    <h2 class="featurette-heading">50 Point Clean Checklist. <span class="text-muted">Not fininished until you sign off.</span></h2>
+    <h2 class="featurette-heading">50 Point Clean Checklist. <span class="text-muted" style="font-size:40px">Not finished until you sign off.</span></h2>
     <p class="lead"> Through time, we developed a 50 point cleaning checklist. The team leader double checks to make sure all cleaning tasks have been completed before handing the list to the client for the final review.</p>
   </div>
 
@@ -227,8 +230,8 @@
    <div class="featurette">
     <%= image_tag ("phone.png"), :class => "featurette-image  pull-right"%>
 
-    <h2 class="featurette-heading"> Supreme Customer Service. <span class="text-muted">No surprises, No Funny Business.</span></h2>
-    <p class="lead">We take our client's satisfaction very seriously. If the client wouldn't recommend us to their friend's we didn't do our job. Schedule an cleaning  today (650)479-5024</p>
+    <h2 class="featurette-heading"> Supreme Customer Service. <span class="text-muted" style="font-size:40px">No surprises, No Funny Business.</span></h2>
+    <p class="lead">We take our client's satisfaction very seriously. If the client wouldn't recommend us to their friends we didn't do our job. Schedule a professional cleaning  today (650)479-5024.</p>
     <form method="get" action="confirmation">
                  <button class= "btn3d btn btn-danger btn-lg" style="margin-top: 9px; margin-right:0px;" type="submit">Book Now.</button>
                </form>
