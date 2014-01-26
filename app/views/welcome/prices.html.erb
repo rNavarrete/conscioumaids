@@ -4,7 +4,7 @@
 
 <style type="text/css">
 .table {font-size:12px;color:#fbfbfb;width:100%;border-width: 1px;border-color: #686767;border-collapse: collapse;}
-.table th {font-size:16px;background-color:#18bc9c;border-width: 1px;padding: 8px;border-style: solid;border-color: #686767;text-align:left;}
+.table th {font-size:16px;background-color:#00adee;border-width: 1px;padding: 8px;border-style: solid;border-color: #686767;text-align:left;}
 .table td {font-size:16px;border-width: 1px;padding: 8px;border-style: solid;border-color: #686767;}
 .table tr:hover {background-color:#171515;}
 
@@ -15,28 +15,21 @@
 
 
 
-<div class="navbar-wrapper">
-  <div class="container">
-    <div class="navbar navbar-inverse navbar-static-top" style="color:white;">
+    <div class="navbar navbar-inverse navbar-static-top" style="color:black;">
       
         <div class="navbar-header">
-        <a class="navbar-brand" href="/" style="font-family: 'Lato', sans-serif; font-weight: 100; font-size: 15px; color: white;"><strong>Conscious Maids</strong></a>
+        <a class="navbar-brand" href="/" style="font-family: 'Lato', sans-serif; font-weight: 100; font-size: 20px; margin: -7px;"><strong><%= image_tag ("newlogo5.png") %></strong></a>
         </div>
 
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav pull-right" style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;">
-            <li><a style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;" href="/prices"><strong>Services/Rates</strong></a></li>
-            <li><a style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;" href="/area"><strong>Where we serve</strong></a></li>
-            <li><a style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;color:white;" href="/faqs"><strong>FAQ</strong></a></li>
+          <ul class="nav navbar-nav pull-right" style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 3px; color:mediumblue; margin-top: 18px; margin-right: 9px;">
+            <li><a style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;" href="/prices"><strong style= "font-size: 18px;">Services/Rates</strong></a></li>
+            <li><a style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;" href="/area"><strong style= "font-size: 18px;">Where we serve</strong></a></li>
+            <li><a style="font-family: 'Lato', sans-serif; font-weight: 300; font-size: 15px;" href="/faqs"><strong style= "font-size: 18px;">FAQ</strong></a></li>
 
-            <li class="navbar-text"><strong>Mon-Sun: 8am - 6pm</strong></li>
-
-            <li class="navbar-text"><strong>Call Now (650)479-5024</strong></li>
+            <li class="navbar-text"><strong style= "font-size: 18px;">(310) 910-2221</strong></li>
 
 
-               <li><form method="get" action="confirmation">
-                 <button class= "btn3d btn btn-danger btn-sm" style="margin-top: 9px; margin-right:0px;" type="submit">Book in 60 secs.</button>
-               </form></li>
 
     
           </ul>
@@ -45,8 +38,6 @@
         </div>
 
     </div>
-  </div><!-- /container -->
-</div><!-- /navbar wrapper -->
 
 
 <!-- Carousel
@@ -54,8 +45,8 @@
 <div id="myCarousel">
   <div class="carousel-inner">
     <div class="item active">
-      <%= image_tag ("blackwood.jpg"), :style => "width: 100%; height: 850px;"  %>
-        <div class="carousel-caption" id="table" style="padding-top: 5px; width: 61%; margin-bottom: 30px;">
+      <%= image_tag ("blackwood.jpg"), :style => "width: 100%; height: 690px;"  %>
+        <div class="carousel-caption" id="table" style="padding-top: 5px; width: 61%; margin-bottom: 80px;">
 
         <h3>Rates:</h3>
           <table id="prices" class="table table-bordered" border="1">
@@ -74,11 +65,6 @@
             <tr><th>Move In/Move Out</th><th>Clean Interior Windows</th><th>Clean Inside Fridge</th><th>Clean Inside Oven</th><th>One load of Laundry</th></tr>
             <tr><td>$50</td><td>$40</td><td>$20</td><td>$20</td><td>$20</td></tr>
           </table>        
-           <form method="get" action="confirmation" class="pull-right" style="padding-botton: 5px; margin-bottom: 9px; bottom: 20px;">
-                 <button class= "btn3d btn btn-danger btn-lg" style="margin-top: 3px; "type="submit">Book in 60 secs.</button>
-               </form>
-
-<h2 style="color: white;"><small>*Prices may fluctuate according to home size. Times are an estimate. Every additional bathroom is $30. No surprises.</small></h2>
           
     </div>
   </div>
@@ -144,7 +130,7 @@
         <li><i class="fa-li fa fa-check-circle"></i> Dust/Wipe Doors</li><br>
       </ul>
         <form method="get" action="confirmation">
-           <button class= "btn3d btn btn-danger btn-lg" style="margin-top: 180px; margin-right:0px;" type="submit">Book Now.</button>
+           <button class= "btn3d btn btn-success btn-lg" style="margin-top: 180px; margin-right:0px;" type="submit">Book Online Now</button>
          </form>
     </div> 
 
@@ -213,7 +199,7 @@
 
   <!-- FOOTER -->
   <footer style="height: 20px;">
-    <p>Conscious Maids LLC</p>
+    <p>Brave Maids LLC</p>
   </footer>
 
 </div><!-- /.container -->
