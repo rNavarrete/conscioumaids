@@ -1,29 +1,89 @@
 
-<header class="ui-bar-a">
-   <img style="pull-right" src="themex/images/med_logo.png" alt="Green Cleaning">
-  <img style="pull-right" src="themex/images/new2.jpg" alt="Green Cleaning">
-</header><!-- /header -->
-
-
-<div role="main" class="ui-content">
- 	
-  <p style="font-family: Lato, sans-serif; font-weight: 900; font-family: Lato, sans-serif; font-weight: 300; font-size: 15px;">Schedule a high quality clean, 100% Satisfaction Guarantee.</p> 
-
-  
-  <h3> Tell us about your place: </h3>
+<div data-theme="b" data-role="page">
 
 
 
+  <header class="ui-bar-a">
+     <img style="pull-right" src="themex/images/med_logo.png" alt="Green Cleaning">
+     <div data-role="navbar">
+    <ul>
+      <li><a href="#book">Book</a></li>
+      <li><a href="#prices">Rates</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+  </div><!-- /navbar -->
+    <img style="pull-right" src="themex/images/new2.jpg" alt="Green Cleaning">
+  </header><!-- /header -->
 
- <%= form_for(@lead) do |f| %>
-  <% if @lead.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
 
-      <ul>
-      <% @lead.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
+  <div data-role="content">
+   	
+    <p style="margin-top: 7px; font-family: Lato, sans-serif; font-weight: 900; font-family: Lato, sans-serif; font-weight: 300; font-size: 15px;">Schedule a high quality clean, 100% Satisfaction Guarantee.</p> 
+  </div>
+   
+  <div data-role="footer" data-position="fixed">
+    <p style="text-align:center; font-family: Lato, sans-serif; font-weight: 300; font-size: 10px;">Brave Maids LLC 2014</p>
+  </div><!-- /footer -->
+</div>
+
+<div data-theme="b" data-role="page" id="book">
+
+  <header class="ui-bar-a">
+     <img style="pull-right" src="themex/images/med_logo.png" alt="Green Cleaning">
+     <div data-role="navbar">
+    <ul>
+      <li><a href="#book">Book</a></li>
+      <li><a href="b.html">Friends</a></li>
+      <li><a href="c.html">Albums</a></li>
+      <li><a href="#Book">Book Now</a></li>
+    </ul>
+  </div><!-- /navbar -->
+    <img style="pull-right" src="themex/images/new2.jpg" alt="Green Cleaning">
+  </header><!-- /header -->
+
+
+  <div data-role="content">
+    
+    <p style="font-family: Lato, sans-serif; font-weight: 900; font-family: Lato, sans-serif; font-weight: 300; font-size: 15px;">Schedule a high quality clean, 100% Satisfaction Guarantee.</p> 
+    <iframe id='booking-widget-iframe' src='https://bravemaids.launch27.com/?w' style='border:none;width:310px;height:2500px;overflow:hidden' scrolling='no'></iframe>
+
+    
+  </div>
+   
+  <div data-role="footer" data-position="fixed">
+    <p style="text-align:center; font-family: Lato, sans-serif; font-weight: 300; font-size: 10px;">Brave Maids LLC 2014</p>
+  </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-theme="b" data-role="page" id="contact">
+
+  <header class="ui-bar-a">
+     <img style="pull-right" src="themex/images/med_logo.png" alt="Green Cleaning">
+     <div data-role="navbar">
+    <ul>
+      <li><a href="#book">Book</a></li>
+      <li><a href="c.html">Albums</a></li>
+      <li><a href="#book">Contact us</a></li>
+    </ul>
+  </div><!-- /navbar -->
+    <img style="pull-right" src="themex/images/new2.jpg" alt="Green Cleaning">
+  </header><!-- /header -->
+
+
+  <div data-role="content">
+    
+    <p style="font-family: Lato, sans-serif; font-weight: 900; font-family: Lato, sans-serif; font-weight: 300; font-size: 15px;">Schedule a high quality clean, 100% Satisfaction Guarantee.</p> 
+
+
+
+  <%= form_for(@lead) do |f| %>
+    <% if @lead.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
+        <ul>
+          <% @lead.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>
@@ -35,12 +95,18 @@
     <%= f.text_field :phone, :placeholder => "Phone"  %>
   </div>
     <%= f.submit "Get Quote", :style => "btn-success"%>
-<% end %>
-</div>
+  <% end %>
 
-<div data-role="footer" style="height:40px;">
-  <p style="text-align:center; font-family: Lato, sans-serif; font-weight: 300; font-size: 10px;">Brave Maids LLC 2014</p>
-</div><!-- /footer -->
+    
+    
+  </div>
+   
+  <div data-role="footer" data-position="fixed">
+    <p style="text-align:center; font-family: Lato, sans-serif; font-weight: 300; font-size: 10px;">Brave Maids LLC 2014</p>
+  </div><!-- /footer -->
+</div><!-- /page -->
+
+
 
 
 
