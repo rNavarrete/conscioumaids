@@ -30,8 +30,8 @@ class LeadsController < ApplicationController
     respond_to do |format|
       if @lead.save
 
-        format.mobile { redirect_to root_path, notice: 'Thank you. Expect a phone call within 10 minutes.' }
-        format.html { redirect_to root_path, notice: 'Thank you. Expect a phone call within 10 minutes.' }
+        format.mobile { redirect_to root_path, notice: 'Thank you. Expect a phone call within a few hours.' }
+        format.html { redirect_to root_path, notice: 'Thank you. Expect a phone call within a few hours.' }
         format.json { render action: 'show', status: :created, location: @lead }
       else
         format.html { render action: 'new' }
