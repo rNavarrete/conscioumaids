@@ -46,6 +46,8 @@ GEM
     daemon_controller (1.2.0)
     erubis (2.7.0)
     execjs (2.0.2)
+    fotoramajs (4.4.9)
+      sprockets (>= 2)
     hike (1.2.3)
     i18n (0.6.5)
     jbuilder (1.5.2)
@@ -135,6 +137,7 @@ PLATFORMS
 DEPENDENCIES
   browser
   coffee-rails (~> 4.0.0)
+  fotoramajs
   jbuilder (~> 1.2)
   jquery-rails
   jquery-ui-rails
