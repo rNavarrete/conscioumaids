@@ -1,15 +1,15 @@
 
-<div data-theme="b" data-role="page">
-
+<div data-theme="b" data-role="page" id="home">
 
 
   <header class="ui-bar-a">
-     <img style="pull-right" src="themex/images/med_logo.png" alt="Green Cleaning">
+     <a href="#page"><img style="pull-right" src="themex/images/med_logo.png" alt="Green Cleaning"></a>
+
      <div data-role="navbar">
     <ul>
-      <li><a href="#book">Book</a></li>
-      <li><a href="#prices">Rates</a></li>
-      <li><a href="#contact">Contact us</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#book">Contact us</a></li>
+      <li><a href="#book">Book Now</a></li>
     </ul>
   </div><!-- /navbar -->
     <img style="pull-right" src="themex/images/new2.jpg" alt="Green Cleaning">
@@ -17,14 +17,40 @@
 
 
   <div data-role="content">
-   	
-    <p style="margin-top: 7px; font-family: Lato, sans-serif; font-weight: 900; font-family: Lato, sans-serif; font-weight: 300; font-size: 15px;">Schedule a high quality clean, 100% Satisfaction Guarantee.</p> 
+    
+    <p style="font-family: Lato, sans-serif; font-weight: 900; font-family: Lato, sans-serif; font-weight: 300; font-size: 15px;"><strong>Schedule a high quality clean, 100% Satisfaction Guarantee.</strong></p> 
+
+
+
+  <%= form_for(@lead) do |f| %>
+    <% if @lead.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
+        <ul>
+          <% @lead.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.text_field :name, :placeholder => "Name" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :email, :placeholder => "Email"  %>
+  </div>
+    <%= f.submit "Get Quote", :style => "btn-success"%>
+  <% end %>
+
+    
+    
   </div>
    
   <div data-role="footer" data-position="fixed">
     <p style="text-align:center; font-family: Lato, sans-serif; font-weight: 300; font-size: 10px;">Brave Maids LLC 2014</p>
   </div><!-- /footer -->
-</div>
+</div><!-- /page -->
 
 <div data-theme="b" data-role="page" id="book">
 
@@ -32,10 +58,9 @@
      <img style="pull-right" src="themex/images/med_logo.png" alt="Green Cleaning">
      <div data-role="navbar">
     <ul>
+      <li><a href="http://bravemaids.com">Home</a></li>
+      <li><a href="#about">About Us</a></li>
       <li><a href="#book">Book</a></li>
-      <li><a href="b.html">Friends</a></li>
-      <li><a href="c.html">Albums</a></li>
-      <li><a href="#Book">Book Now</a></li>
     </ul>
   </div><!-- /navbar -->
     <img style="pull-right" src="themex/images/new2.jpg" alt="Green Cleaning">
@@ -61,9 +86,9 @@
      <img style="pull-right" src="themex/images/med_logo.png" alt="Green Cleaning">
      <div data-role="navbar">
     <ul>
+      <li><a href="http://bravemaids.com">Home</a></li>
+      <li><a href="#about">About us</a></li>
       <li><a href="#book">Book</a></li>
-      <li><a href="c.html">Albums</a></li>
-      <li><a href="#book">Contact us</a></li>
     </ul>
   </div><!-- /navbar -->
     <img style="pull-right" src="themex/images/new2.jpg" alt="Green Cleaning">
@@ -92,7 +117,7 @@
     <%= f.text_field :name, :placeholder => "Name" %>
   </div>
   <div class="field">
-    <%= f.text_field :phone, :placeholder => "Phone"  %>
+    <%= f.text_field :email, :placeholder => "Email"  %>
   </div>
     <%= f.submit "Get Quote", :style => "btn-success"%>
   <% end %>
