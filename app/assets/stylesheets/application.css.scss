@@ -34,17 +34,28 @@ body {
 
 /* Set the fixed height of the footer here */
 #footer {
-  height: 80px;
+  height: 100px;
   background-color: black;
   color: grey;
+  border-top-style: outset;
+  border-top-color: floralwhite;
 }
 
 /* Set the fixed height of the footer here */
-#footertop {
-  height: 100px;
+#footertwo {
+  height: 75px;
   background-color: slategrey;
   color: white;
+  border-top-style: ridge;
+  background-color: lightslategrey;
 
+
+
+}
+
+.twitter-follow-botton{
+  
+  padding-top: 6px;
 }
 
 

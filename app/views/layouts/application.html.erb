@@ -20,21 +20,29 @@
   </head>
   <body>
 
+
+
   <%= yield %>
 
 
 
 
-<div id="footertop">
-      <div class="container">
-        <p class="text-center" style="color: #d6d6d6; font-family: 'Lato', sans-serif; font-weight: 900; font-size: 20px; padding-top: 25px;"> Serving : Los Angeles | Culver City | San Gabriel | </p>
+<div id="footertwo">
+      <div class="container text-center">
+        <p>
+          <div class="fb-like" data-href="https://facebook.com/bravemaids/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" style="display: block; padding-left: 160px; padding-bottom: 6px;"></div>
+          <a href="https://twitter.com/bravemaids" class="twitter-follow-button" data-width="300px" style="padding-top: 6px;">Follow @bravemaids</a>
+        </p>
       </div>
     </div>
     <div id="footer">
-      <div class="container">
-        <p class=""></a><%= image_tag ("footerlogo.jpg"), :style => "padding-top: 10px; padding-right: 10px;"%><%= image_tag ("bbblogo.png"), :style => "padding-top: 10px; padding-right: 10px;"%><%= image_tag ("norton.png"), :style => "padding-top: 10px;"%> <span style="font-family: 'Lato', sans-serif; font-weight: 900; font-size: 15px; padding-left: 25px; padding-top: 20px;"> © 2014 Brave Maids - Clean Home Clean Spirit</span></p>
+      <div class="container text-center">
+        <p>
+        <%= image_tag ("footerlogo.jpg"), :style => "padding-top: 10px; padding-right: 10px;"%><%= image_tag ("bbblogo.png"), :style => "padding-top: 10px; padding-right: 10px;"%><%= image_tag ("norton.png"), :style => "padding-top: 10px;"%></p>
       </div>
     </div>
+  
+
   <!-- begin olark code -->
   <script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
   f[z]=function(){
@@ -55,6 +63,50 @@
   /* custom configuration goes here (www.olark.com/documentation) */
   olark.identify('2257-878-10-9366');/*]]>*/</script><noscript><a href="https://www.olark.com/site/2257-878-10-9366/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
   <!-- end olark code -->
+
+
+
+  <!-- Facebook javascript-->
+
+<div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '{your-app-id}',
+          status     : true,
+          xfbml      : true
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- End Facebook javascript-->
+  <!-- Begin Twitter javascript-->
+
+
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <!-- End Twitter javascript-->
+
+
+
+
   
   </body>
   </html>
