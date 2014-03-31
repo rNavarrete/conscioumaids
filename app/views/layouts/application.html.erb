@@ -8,6 +8,7 @@
     <%=h yield(:title) %>
   
     </title>   
+
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,900,400' rel='stylesheet' type='text/css'>  
     <%= stylesheet_link_tag  "application", media: "all", "data-turbolinks-track" => false %>
@@ -16,9 +17,11 @@
     <%= stylesheet_link_tag  "mobile" if device_type == :mobile %>
     <%= stylesheet_link_tag  "tablet" if device_type == :tablet %>
     <%= csrf_meta_tags %>
+  
 
   </head>
   <body>
+
 
 
 
@@ -103,6 +106,10 @@
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
     <!-- End Twitter javascript-->
+
+    <script type="text/javascript" src="http://s3.amazonaws.com/scripts.hellobar.com/6c8bd344a1c638f070ebff074cdaf1edb34cd265.js"></script>
+
+
 
 
 

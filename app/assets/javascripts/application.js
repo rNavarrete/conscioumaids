@@ -47,6 +47,8 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
+<script type="text/javascript" src="//s3.amazonaws.com/scripts.hellobar.com/6c8bd344a1c638f070ebff074cdaf1edb34cd265.js"></script>
+
 
 
 
