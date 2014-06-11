@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
             session[:mobile] = true
           end
           request.format = :mobile if mobile_device?
-          request.format = :tablet if device_type == :tablet
+          request.format = :html if device_type == :tablet
       end
   end
 end
