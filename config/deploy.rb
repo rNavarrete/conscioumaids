@@ -3,12 +3,20 @@ lock '3.2.1'
 
 set :application, 'conscioumaids'
 set :repo_url, 'https://github.com/rNavarrete/conscioumaids'
+set :host, "162.243.139.232"
+set :user, "ubuntu"
+set :deploy_to, "/home/ubuntu/#{application}"
+
+
+
+role :web, host
+role :app, host
+role :db,  host, :primary => true # This is where Rails migrations will run
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-# set :deploy_to, '/var/www/my_app'
 
 # Default value for :scm is :git
 # set :scm, :git
