@@ -5,7 +5,7 @@ set :application, 'conscioumaids'
 set :repo_url, 'https://github.com/rNavarrete/conscioumaids'
 set :host, "162.243.139.232"
 set :user, "ubuntu"
-set :deploy_to, "/home/ubuntu/#{application}"
+set :deploy_to, "/home/ubuntu/conscioumaids"
 
 
 
