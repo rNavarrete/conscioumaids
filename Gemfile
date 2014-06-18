@@ -6,8 +6,10 @@ gem "passenger"
 
 
 
+
+
 # Use sqlite3 as the database for Active Record
-gem 'pg', '~>0.17.0'
+gem 'sqlite3', '~>0.17.0'
 
 gem 'rails_12factor'
 
@@ -33,7 +35,7 @@ gem "browser"
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-gem "jquery_mobile-rails", :git => 'https://github.com/Guidecase/jquery_mobile-rails.git'
+gem "jquery_mobile-rails"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
@@ -49,7 +51,7 @@ end
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano-ext', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
