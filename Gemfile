@@ -4,12 +4,22 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem "passenger"
 
+gem 'rake'
+ 
+# Use Capistrano for deployment
 
+ 
 
 
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~>0.17.0'
+group :development do	
+	gem 'sqlite3'
+end	
+
+group :production do
+	gem 'mysql2'
+end	
 
 gem 'rails_12factor'
 
@@ -51,7 +61,8 @@ end
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-gem 'capistrano-ext', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'unicorn'
+gem 'capistrano', '~> 2.15'
