@@ -3,8 +3,9 @@ require 'bundler/capistrano'
 default_run_options[:pty] = true
 
 
-set :default_env, { path: "~/.rbenv/shims:~/.rbenv/bin:$PATH" }
-
+set :default_environment, {
+      'PATH' => "/opt/ruby-enterprise/bin/:$PATH"
+    }
 set :ssh_options, { :forward_agent => true }
 
 set :application, "conscioumaids"
