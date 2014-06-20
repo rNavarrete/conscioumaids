@@ -8,7 +8,7 @@ gem 'rake'
  
 # Use Capistrano for deployment
 
- gem 'therubyracer', :platforms => :ruby
+ gem 'therubyracer'
 
 
 
