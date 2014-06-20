@@ -4,8 +4,8 @@ default_run_options[:pty] = true
 
 
 set :default_environment, {
-      'PATH' => "/opt/rbenv/shims:/opt/rbenv/bin:/opt/rbenv/plugins/ruby_build/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
-    }
+  'PATH' => "/opt/ruby-enterprise/bin/:$PATH"
+}
 set :ssh_options, { :forward_agent => true }
 
 set :application, "conscioumaids"
