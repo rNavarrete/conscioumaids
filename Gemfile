@@ -5,7 +5,7 @@ gem 'rails', '4.0.0'
 gem "passenger"
 
 gem 'rake'
- 
+
 # Use Capistrano for deployment
 
  gem 'therubyracer'
@@ -13,13 +13,14 @@ gem 'rake'
 
 
 # Use sqlite3 as the database for Active Record
-group :development do	
+group :development do
 	gem 'sqlite3'
-end	
+end
 
 group :production do
+  gem 'sqlite3'
 	gem 'mysql2'
-end	
+end
 
 gem 'rails_12factor'
 
