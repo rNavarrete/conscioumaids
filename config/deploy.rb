@@ -1,5 +1,12 @@
 require 'bundler/capistrano'
 
+before "deploy:assets:precompile" do
+  run ["ln -nfs #{shared_path}/config/settings.yml #{release_path}/config/settings.yml",
+       "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml",
+       "ln -fs #{shared_path}/uploads #{release_path}/uploads"
+  ].join(" && ")
+end
+
 default_run_options[:pty] = true
 
 
@@ -19,12 +26,7 @@ server "162.243.139.232", :web, :app, :db, :primary => true
 
 after "deploy:finalize_update", "symlink:all"
 
-before "deploy:assets:precompile" do
-  run ["ln -nfs #{shared_path}/config/settings.yml #{release_path}/config/settings.yml",
-       "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml",
-       "ln -fs #{shared_path}/uploads #{release_path}/uploads"
-  ].join(" && ")
-end
+
 
 namespace :symlink do
   task :db do
