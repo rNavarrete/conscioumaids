@@ -4,7 +4,7 @@ default_run_options[:pty] = true
 
 
 set :default_environment, {
-  'PATH' => "/opt/ruby-enterprise/bin/:$PATH"
+  'PATH' => "/opt/rbenv/shims:$PATH"
 }
 set :ssh_options, { :forward_agent => true }
 
