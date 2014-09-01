@@ -9,7 +9,7 @@ set :default_environment, {
 set :ssh_options, { :forward_agent => true }
 
 set :application, "conscioumaids"
-set :repository, "https://github.com/rNavarrete/conscioumaids.git"
+set :repository, "git@github.com:rNavarrete/conscioumaids.git"
 set :user, "root"
 set :use_sudo, false
 
