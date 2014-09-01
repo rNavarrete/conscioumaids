@@ -2,7 +2,7 @@
 
 
     <div class="navbar navbar-inverse navbar-static-top" style="color:black;">
-      
+
         <div class="navbar-header">
 
         <a class="navbar-brand" href="/" style="font-family: 'Lato', sans-serif; font-weight: 100; font-size: 20px; margin: -7px; img-responsive"><strong><%= image_tag ("Logo.jpg"), size: "300x60" %></strong></a>
@@ -29,23 +29,23 @@
 
 
     <div class="item active">
-       
 
-      <div style="filter: grayscale(100%) sepia(100%);"> 
+
+      <div style="filter: grayscale(100%) sepia(100%);">
         <%= image_tag ("purple.jpg"), :style => "width: 100%; height: 700px;border-bottom:1px solid black;"%>
-      </div>  
+      </div>
 
 
 
           <div class="carousel-caption" style="width: 100%; left: 0px; right: 0px; height: 100%; padding-top: 0px; padding-bottom: 60px; ">
 
-            
+
               <h1 style=" margin-top: 57px; font-family: 'Lato', sans-serif; font-weight: 900; padding-bottom: 20px; text-shadow: 0 5px 7px rgba(0, 0, 0, 1); text-align: center; color: inherit;"> Safe & Professional Los Angeles Home Cleaning.</h1>
-                    
+
                     <div class="col-md-3 offset-col-md-4">
 
-                        
-            <iframe  class="img-responsive" id="video" style=" height: 324px; width: 560px; margin-left: 214px; margin-top: 20px; border-width: 7px; border-style: solid;"src="http://www.youtube.com/embed/yHocd4CNz_g?rel=0&showinfo=0&iv_load_policy=3&controls=0" frameborder="0" allowfullscreen></iframe>
+
+            <iframe  class="img-responsive" id="video" style=" height: 350px; width: 359px; margin-left: 214px; margin-top: 20px; border-width: 7px; border-style: solid;"src="http://www.youtube.com/embed/yHocd4CNz_g?rel=0&showinfo=0&iv_load_policy=3&controls=0" frameborder="0" allowfullscreen></iframe>
 
 
 
@@ -55,7 +55,7 @@
 
                     </div>
                  <div class="col-md-6 col-md-offset-2 margin-bottom: 10; 0px;">
-                 <h1 style="font-family: 'Lato', sans-serif; font-weight: 400; font-size: 40px; text-shadow: 0 5px 7px rgba(0, 0, 0, .9);"><em>Trustworthy and Reliable Service</em></h1>     
+                 <h1 style="font-family: 'Lato', sans-serif; font-weight: 400; font-size: 40px; text-shadow: 0 5px 7px rgba(0, 0, 0, .9);"><em>Trustworthy and Reliable Service</em></h1>
                   <h3 style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 400; font-size: 30px; text-shadow: 0 5px 7px rgba(0, 0, 0, .9);"><i class="fa fa-check-square-o"></i> 200% Money Back Guarantee.</h3>
                   <h3 style="font-family: 'Lato', sans-serif; font-weight: 400; text-align:center; font-size: 30px; text-shadow: 0 5px 7px rgba(0, 0, 0, .9);"><i class="fa fa-check-square-o"></i> Organic cleaning products</h3>
                   <h3 style="font-family: 'Lato', sans-serif; font-weight: 400; text-align:center; font-size: 30px; text-shadow: 0 5px 7px rgba(0, 0, 0, 1);"><i class="fa fa-check-square-o"></i>Two Person Team </h3>
@@ -64,9 +64,9 @@
                   <form method="get" action="confirmation">
                    <button class="btn btn-success btn-lg btn3d" style="margin-top: 15px; margin-right:0px;" type="submit">Book Now</button>
                   </form>
-                
-      </div>   
-</div>         
+
+      </div>
+</div>
 
     <div class="container social-links" style="background-color: #ececec; height:60px; width: 100%;">
       <h5 style="display:-webkit-inline-box; font-family: 'Lato', sans-serif; font-weight: 400; font-size: 27px; margin-left: 214px; color: dimgrey;">Find us on:</h5>
@@ -80,7 +80,7 @@
     </div>
 
 
-         
+
       <div class="container">
 
               <% flash.each do |name, msg| %>
@@ -99,7 +99,7 @@
 
     <%= form_for @lead, html: {class: "form-horizontal", role: "form", style: "margin-left: 50px; padding-top: 50px"}  do |f| %>
 
-      
+
       <% if @lead.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
@@ -109,18 +109,18 @@
             <li><%= msg %></li>
           <% end %>
         </ul>
-      <% end %>  
--->    
+      <% end %>
+-->
 
 
-         
+
 <!--
           <div class="form-group">
 
             <%= f.label :email, :class => "col-sm-2 control-label" %>
             <div class="col-sm-5">
               <%= f.text_field :email, :class => "form-control", :style => "width: 60%" %>
-            </div>  
+            </div>
           </div>
 
           <div class="form-group">
@@ -135,16 +135,16 @@
             <div class="col-sm-5">
               <%= f.text_field :phone, :class => "form-control", :style => "width: 60%" %>
             </div>
-          </div>  
+          </div>
 
           <div class="form-group">
             <div class="col-sm-offset-2 col-sm-3">
               <%= f.submit "Get instant quote", :class => "btn btn-danger" %>
-            </div>  
+            </div>
           </div>
-  -->        
+  -->
         <% end %>
-      </div>  
+      </div>
     </div>
   </div>
 </div>
@@ -157,27 +157,27 @@
 
 <div class="container marketing" style="width: 100%;">
 
-  <div class="text-center" style="padding-bottom: 15px; text-align:center; "> 
+  <div class="text-center" style="padding-bottom: 15px; text-align:center; ">
     <h1 style="font-family: 'Lato', sans-serif; font-weight: 900; font-size: 40px; color: #00adee;"> <em>"Why Choose Brave Maids?"</em></h1>
-  </div> 
+  </div>
 
   <!-- Three columns of text below the carousel -->
   <div class="row" style="margin-bottom: 50px;">
 
-    
+
     <div class="col-md-4 text-center">
       <%= image_tag ("green7.gif"), :class => "img-circle" %>
       <h2 style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 900; font-size: 28px;"> Eco-friendly Green Cleaning.</h2>
       <p style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 300; font-size: 19px;">Our cleaning teams use only non-toxic organic cleaning products, which are certified by the EPA as being the safest to humans and animals.</p>
 
     </div>
-    
+
 
     <div class="col-md-4 text-center">
       <%= image_tag ("200r1.png") %>
       <h2 style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 900; font-size: 28px;">200% Satisfaction  Guarantee.</h2>
       <p style="text-align:center; font-family: 'Lato', sans-serif; font-weight: 300; font-size: 19px;">If not satisfied we will take the time to re-clean within 24hrs. If for any reason you are still not satisfied with the service, we will refund you no questions asked!</p>
-    </div>    
+    </div>
 
 
 
@@ -188,13 +188,13 @@
     </div>
 
 
-    
+
   </div><!-- /.row -->
 
 
-  
+
 <div class="row marketing" style="background-color: #3c96d9; height: 648px;">
-    <div class="text-center" style="padding-bottom: 50px; text-align:center; "> 
+    <div class="text-center" style="padding-bottom: 50px; text-align:center; ">
 
       <h2 style="font-family: 'Lato', sans-serif; font-weight: 900; font-size: 40px; color: #C7F3FF;"> <em>What our clients are saying</em></h2>
 
@@ -241,20 +241,20 @@
       </div>
     </div>
     </div>
-</div> 
+</div>
 
 
 
-  </div> 
+  </div>
   <div class="row">
 
-    
+
     <div class="col-md-4 text-center">
-      
+
     </div>
 
 
-    
+
   </div><!-- /.row -->
   <!-- Three columns of text below the carousel -->
 </div>
@@ -276,7 +276,7 @@
 
         <%= image_tag ("dog8.jpg"), :class => "featurette-image pull-right"%>
 
-      
+
     <h2 class="featurette-heading">Protect your family. <span class="text-muted" style="font-size:40px"> Healthy families are happy families.</span></h2>
     <p class="lead">You wouldn't believe some of the stuff that's in cleaning products. Even cleaning products that are labeled as being green are bogus. Take a look at the cleaning products  <a href="http://www.ewg.org/cleaners/hallofshame/">"Hall of Shame."</a></p>
   </div>
@@ -307,7 +307,7 @@
 
 
 
-  
+
 
 </div><!-- /.container -->
 
