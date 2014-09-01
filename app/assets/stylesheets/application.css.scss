@@ -9,7 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require jquery.ui.all
+ *= require jquery-ui
  *= require jquery_mobile
  *= require bootstrap
  *= require_tree .
@@ -36,7 +36,7 @@
   border-bottom: 3px solid #fff;
   font-family: Georgia,Times New Roman,Times,serif;
 }
- 
+
 .woahbar-stub
 {
   position: fixed;
@@ -48,7 +48,7 @@
   padding: 7px 0 5px 0;
   text-align: center;
 }
- 
+
 .woahbar span
 {
   float: left;
@@ -56,12 +56,12 @@
   text-align: center;
   padding-top: 2px;
 }
- 
+
 .woahbar-link
 {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
- 
+
   background: #4c4c4c; /* Old browsers */
   background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(12%,#595959), color-stop(25%,#666666), color-stop(39%,#474747), color-stop(50%,#2c2c2c), color-stop(51%,#000000), color-stop(60%,#111111), color-stop(76%,#2b2b2b), color-stop(91%,#1c1c1c), color-stop(100%,#131313)); /* Chrome,Safari4+ */
@@ -75,20 +75,20 @@
   color: white;
   padding: 2px 8px 1px 8px;
 }
- 
+
 .woahbar-down-arrow:hover {
   background-color: #ff7f62; /* << set custom hover bar color here */
 }
- 
+
 .woahbar-up-arrow:hover {
   background: url(woahbar-up-arrow-hover.png);
 }
- 
+
 .woahbar-link:hover
 {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
- 
+
   background: #5c5c5c; /* Old browsers */
   background: -moz-linear-gradient(top, #5c5c5c 0%, #696969 12%, #777777 25%, #575757 39%, #3c3c3c 50%, #111111 51%, #111111 60%, #3b3b3b 76%, #2c2c2c 91%, #232323 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5c5c5c), color-stop(12%,#696969), color-stop(25%,#777777), color-stop(39%,#575757), color-stop(50%,#3c3c3c), color-stop(51%,#111111), color-stop(60%,#111111), color-stop(76%,#3b3b3b), color-stop(91%,#2c2c2c), color-stop(100%,#232323)); /* Chrome,Safari4+ */
@@ -103,7 +103,7 @@
   padding: 2px 8px 1px 8px;
   text-decoration: none;
 }
- 
+
 .close-notify
 {
   float: right;
@@ -115,7 +115,7 @@
   background-color: #EB593C; /* << set custom bar color here */
   cursor:pointer;
 }
- 
+
 .show-notify
 {
   -moz-border-radius: 3px;
@@ -177,7 +177,7 @@ body {
 }
 
 .twitter-follow-botton{
-  
+
   padding-top: 6px;
 }
 
@@ -386,7 +386,7 @@ body {
   }
   .marketing{
     margin-top: 0px;
-  }  
+  }
   .carousel-caption{
     font-size: 10px;
     height: 700px;
@@ -395,10 +395,10 @@ body {
   }
   #ordersize{
     font-size: 20px;
-  } 
+  }
   .marketing h1 {
     font-size: 27px;
-  } 
+  }
 }
 
 @media (min-width: 692px) {
@@ -410,7 +410,7 @@ body {
        display: none !important;
    }
 }
-  
+
 }
 
  @import "bootstrap";
