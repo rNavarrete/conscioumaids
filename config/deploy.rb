@@ -19,6 +19,7 @@ set :application, "conscioumaids"
 set :repository, "https://github.com/rNavarrete/conscioumaids.git"
 set :user, "root"
 set :use_sudo, false
+set :deploy_to, "/home/deployer/apps/conscioumaids"
 
 server "162.243.139.232", :web, :app, :db, :primary => true
 
